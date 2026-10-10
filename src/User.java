@@ -2,7 +2,6 @@ public class User
 {
     public int userId;
     public String name;
-    public String address;
 
     public User(String name, int userId){
         this.userId = userId;
@@ -22,16 +21,9 @@ public class User
         this.name = name;
     }
 
-    public void setAddress(String address)
-    {
-        address = address;
-    }
-
     public int getUserId(){ return userId; }
 
     public String getName(){ return name; }
-
-    public String getAddress(){ return "STREETNAME"; }
 
     @Override
     public boolean equals(Object o){
