@@ -8,16 +8,12 @@ public class User
   public User(String name, int userId)
   {
     this.userId = userId;
-    if (name.length() < 0 || name.length() > 100)
-    {
-      return;
-    }
-    this.name = name;
+    setName(name);
   }
 
   public void setName(String name)
   {
-    if (name.length() < 0)
+    if (name == null || name.isEmpty() || name.length() > 100)
     {
       return;
     }
