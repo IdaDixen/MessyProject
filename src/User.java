@@ -4,8 +4,8 @@ public class User
 {
   private static final int MAX_NAME_LENGTH = 100;
 
-  public int userId;
-  public String name;
+  private int userId;
+  private String name;
 
   public User(String name, int userId)
   {
