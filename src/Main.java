@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class Main
 {
     public static void main(String[] args)
@@ -13,6 +15,13 @@ public class Main
 
         System.out.println(list.getu());
 
+      try
+      {
         Persister.s(list.getu());
+      }
+      catch (IOException e)
+      {
+        throw new RuntimeException(e);
+      }
     }
 }
