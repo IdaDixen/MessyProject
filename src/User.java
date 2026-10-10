@@ -4,7 +4,7 @@ public class User
 {
   private static final int MAX_NAME_LENGTH = 100;
 
-  private int userId;
+  private final int userId;
   private String name;
 
   public User(String name, int userId)
