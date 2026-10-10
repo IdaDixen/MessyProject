@@ -8,7 +8,7 @@ public class UserList
   {
     if (user == null)
     {
-      return;
+      throw new IllegalArgumentException("User cannot be null");
     }
     this.users.add(user);
   }
