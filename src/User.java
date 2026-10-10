@@ -9,6 +9,10 @@ public class User
 
   public User(String name, int userId)
   {
+    if (userId <= 0)
+    {
+      throw new IllegalArgumentException("User ID must be positive");
+    }
     this.userId = userId;
     setName(name);
   }
