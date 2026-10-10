@@ -19,7 +19,7 @@ public class User
 
   public void setName(String name)
   {
-    if (name == null || name.isEmpty() || name.length() > MAX_NAME_LENGTH)
+    if (name == null || name.isBlank() || name.length() > MAX_NAME_LENGTH)
     {
       throw new IllegalArgumentException("Invalid name");
     }
