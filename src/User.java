@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class User
 {
   public int userId;
@@ -36,7 +38,7 @@ public class User
   {
     if (o instanceof User u)
     {
-      return u.name == name;
+      return Objects.equals(u.name, name);
     }
     return false;
   }
