@@ -13,11 +13,11 @@ public class Main
         list.add(u2);
         list.add(u2);
 
-        System.out.println(list.getu());
+        System.out.println(list.getUsers());
 
       try
       {
-        Persister.s(list.getu());
+        Persister.s(list.getUsers());
       }
       catch (IOException e)
       {
