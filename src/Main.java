@@ -11,7 +11,7 @@ public class Main
         UserList list = new UserList();
         list.add(u1);
         list.add(u2);
-        list.add(u3);
+        list.add(u2);
 
         System.out.println(list.getu());
 
