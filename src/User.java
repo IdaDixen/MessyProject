@@ -15,7 +15,7 @@ public class User
   {
     if (name == null || name.isEmpty() || name.length() > 100)
     {
-      return;
+      throw new IllegalArgumentException("Invalid name");
     }
     this.name = name;
   }
