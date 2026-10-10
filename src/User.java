@@ -50,4 +50,9 @@ public class User
   {
     return Objects.hash(name);
   }
+
+  @Override public String toString()
+  {
+    return "User{" + "userId=" + userId + ", name='" + name + '\'' + '}';
+  }
 }
